@@ -1,11 +1,16 @@
 getwd()
-setwd('C:\\shawn\\迴歸分析資料夾\\最終上傳檔\\Sec 02')
+setwd("C:/Users/USER/Downloads/迴歸")
 
 Hardness <- read.table('hardness.txt',header=T)
 
 IOWAtest <- read.table('iowatest.txt',header=T,sep=',')
+IOWAtest1 <- read.csv('iowatest.txt',header=T)
 
+#read.csv 是用,間隔
+#資料裡有row index，可用row.names設定
 Duncan <- read.csv('MyDuncan.csv',header=T,row.names = 1)
+
+stopping <- read.table("stopping.txt",header=T)
 
 CH01 <- read.table('CH01TA01.DAT',header=F)
 
